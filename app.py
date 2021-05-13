@@ -10,9 +10,9 @@ app = Flask(__name__)
 @app.route("/")
 def generate_buzz():
     """generate flask wrapper"""
-    page = '<html><body><h1>'
+    page = '<html><body style="background-color:#7be1e8"><center><h1 style="font-family:cursive">'
     page += generator.generate_buzz()
-    page += '</h1></body></html>'
+    page += '</center></h1></body></html>'
     return page
 
 
